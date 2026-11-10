@@ -3,15 +3,26 @@
 > **2026 年全国大学生数学建模竞赛 C 题**的建模、求解、复现与提交材料仓库。
 >
 > **预测负荷，安排购电，实时修正，量化不确定性。**
+>
+> 🏆 **项目成果获得 2026 年全国大学生数学建模竞赛广东赛区三等奖**
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2019b%2B-0076A8?logo=mathworks&logoColor=white)](https://www.mathworks.com/products/matlab.html)
 [![Optimization](https://img.shields.io/badge/Optimization-LP%20%2B%20Rolling%20Control-2F855A)](#模型架构)
+[![Award](https://img.shields.io/badge/Award-广东赛区三等奖-C9A227)](#项目荣誉)
 [![License](https://img.shields.io/badge/License-Academic%20Use-lightgrey)](#使用说明)
 
 [English](README.md) | 中文
 
 ---
+
+## 项目荣誉
+
+本项目对应的论文、模型与程序成果获得：
+
+**2026 年全国大学生数学建模竞赛广东赛区三等奖**
+
+本仓库用于归档赛后论文、源程序、模型说明、结果文件和复现实验材料。获奖信息用于记录项目来源；模型和数值结果均针对竞赛数据与题设假设，不应直接视为实际微网运行建议。
 
 ## 项目概览
 
@@ -31,6 +42,17 @@
 | **Q4** | 逐日波动电价 | 将 Q2/Q3 的策略链扩展到逐日变化的 144 点电价 |
 
 仓库同时包含模型说明、Python 与 MATLAB 程序、结构化结果、独立运行测试目录及成品提交材料。
+
+## 快速开始
+
+如果只希望快速了解项目或复现主要结果，建议按以下顺序阅读：
+
+1. 阅读 [`C题/`](C题/) 下各问题对应的模型说明；
+2. 查看 [`代码独立运行测试文件夹/`](代码独立运行测试文件夹/) 中的独立运行目录；
+3. 按照[独立运行说明](代码独立运行测试文件夹/README.md)运行 Python 或 MATLAB 程序；
+4. 将生成结果与 `C题/Q1/` 至 `C题/Q4/` 中的结构化结果进行对照。
+
+本仓库主要用于学术交流、教学参考和可复现实验，不面向真实微网的直接部署。
 
 ## 结果速览
 
@@ -190,5 +212,7 @@ Q4 保持全年平均电价不变，但改变了电价与负荷、光伏之间�
 ## 使用说明
 
 本仓库用于数学建模竞赛分析、论文提交和可复现实验。数据、价格、预报、储能参数与模型假设均针对本题设置。代码适合学术和教学用途；若用于真实微网，请先重新校验数据、市场规则与工程约束。
+
+最新的竞赛成果归档通过 GitHub Release 发布。默认分支后续可以继续补充文档和复现说明，但不改变本项目已报告的竞赛结果。
 
 英文项目说明见 [README.md](README.md)。

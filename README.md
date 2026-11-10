@@ -3,15 +3,24 @@
 > A reproducible modeling and optimization repository for **China Undergraduate Mathematical Contest in Modeling 2026 · Problem C**.
 >
 > **Forecast demand. Schedule energy. Adapt in real time. Quantify uncertainty.**
+>
+> 🏆 **Award: Third Prize in the Guangdong Division of the 2026 China Undergraduate Mathematical Contest in Modeling**
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2019b%2B-0076A8?logo=mathworks&logoColor=white)](https://www.mathworks.com/products/matlab.html)
 [![Optimization](https://img.shields.io/badge/Optimization-LP%20%2B%20Rolling%20Control-2F855A)](#modeling-architecture)
+[![Award](https://img.shields.io/badge/Award-Guangdong%20Division%20Third%20Prize-C9A227)](#award)
 [![License](https://img.shields.io/badge/License-Academic%20Use-lightgrey)](#notes-on-use)
 
 English | [中文](READMECN.md)
 
 ---
+
+## Award
+
+This project received the **Third Prize in the Guangdong Division of the 2026 China Undergraduate Mathematical Contest in Modeling**.
+
+This repository is the post-contest archive of the modeling paper, source code, model explanations, results, and reproducibility materials. The award information is recorded for project provenance; the models and numerical results remain specific to the contest data and assumptions.
 
 ## Project At A Glance
 
@@ -31,6 +40,17 @@ The solution is organized as a four-stage progression:
 | **Q4** | Day-by-day volatile electricity prices | Reuse and stress-test the Q2/Q3 strategy chain under realistic price variation |
 
 The repository includes mathematical write-ups, Python implementations, MATLAB implementations, generated summaries, test layouts, and supporting submission materials.
+
+## Quick Start
+
+If you only want to inspect or reproduce the main results:
+
+1. Read the question-specific model explanations in [`C题/`](C题/).
+2. Use the independent execution layout in [`代码独立运行测试文件夹/`](代码独立运行测试文件夹/).
+3. Run the Python or MATLAB entry points described in [`代码独立运行测试文件夹/README.md`](代码独立运行测试文件夹/README.md).
+4. Compare generated outputs with the structured summaries in `C题/Q1/` through `C题/Q4/`.
+
+The repository is intended for academic review, teaching, and reproducible experimentation rather than direct deployment to a real microgrid.
 
 ## Results Snapshot
 
@@ -195,5 +215,7 @@ In Q4, the volatile tariff preserves the annual mean price but changes its relat
 ## Notes On Use
 
 This is an academic modeling repository created for analysis, competition submission, and reproducible experimentation. The data, assumptions, prices, forecasts, and storage parameters are specific to the contest problem. The code is provided for scholarly and educational use; validate all assumptions before applying the framework to an actual microgrid.
+
+The latest contest-result archive is published as a GitHub Release. Source files on the default branch may continue to receive documentation and reproducibility improvements without changing the reported competition results.
 
 For the Chinese project guide, see [READMECN.md](READMECN.md).
